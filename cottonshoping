@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CottonClothing | Premium Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+}
+
+header{
+background:#111827;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#00d4ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+height:85vh;
+background:linear-gradient(135deg,#0f172a,#2563eb);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:white;
+color:#2563eb;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+}
+
+.section{
+padding:70px 8%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:38px;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.category{
+background:white;
+padding:35px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+font-size:22px;
+font-weight:600;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.info{
+padding:20px;
+}
+
+.info h3{
+margin-bottom:10px;
+}
+
+.price{
+font-size:24px;
+color:green;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.buy{
+display:block;
+text-align:center;
+padding:12px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.about{
+background:white;
+border-radius:15px;
+padding:30px;
+line-height:1.8;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🧵 CottonClothing</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>CottonClothing</h1>
+
+<p>
+Premium Cotton Fashion For Men & Women.
+Stylish Designs. Affordable Prices.
+</p>
+
+<a href="#products" class="btn">Shop Now</a>
+
+</section>
+
+<section class="section" id="categories">
+
+<h2>Shop By Category</h2>
+
+<div class="categories">
+
+<div class="category">👕 T-Shirts</div>
+<div class="category">👔 Shirts</div>
+<div class="category">👖 Jeans</div>
+<div class="category">🧥 Hoodies</div>
+
+</div>
+
+</section>
+
+<section class="section" id="products">
+
+<h2>Trending Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800">
+<div class="info">
+<h3>Premium Cotton Tee</h3>
+<div class="price">₹499</div>
+<a class="buy" href="#">Add To Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800">
+<div class="info">
+<h3>Classic Shirt</h3>
+<div class="price">₹899</div>
+<a class="buy" href="#">Add To Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=800">
+<div class="info">
+<h3>Denim Jeans</h3>
+<div class="price">₹1299</div>
+<a class="buy" href="#">Add To Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=800">
+<div class="info">
+<h3>Premium Hoodie</h3>
+<div class="price">₹1499</div>
+<a class="buy" href="#">Add To Cart</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>About CottonClothing</h2>
+
+<div class="about">
+
+CottonClothing is an online fashion store focused on
+premium cotton apparel, modern designs, and affordable pricing.
+
+We deliver quality clothing directly to customers and continuously
+add new collections to keep your wardrobe fresh and stylish.
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>🧵 CottonClothing</h3>
+<p>Premium Fashion Store</p>
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
